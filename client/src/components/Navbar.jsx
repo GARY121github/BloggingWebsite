@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="relative">
     <nav className="bg-black p-4 flex flex-wrap justify-around fixed w-full top-0 z-10">
-        <Link to="/" className="text-white text-3xl">Blogging Website</Link>
+        <Link to="/" className="text-white text-3xl font-extrabold">Blogging Website</Link>
 
         <ul className="flex flex-wrap justify-around w-1/5">
             <NavLink to="/" className={({isActive}) => `text-2xl cursor-pointer hover:text-blue-600 self-center ${isActive ? "text-blue-600" : "text-white"}`}>Home</NavLink>

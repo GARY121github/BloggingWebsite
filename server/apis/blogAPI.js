@@ -61,7 +61,7 @@ router.get('/blog/:id', async (req, res) => {
 // delete
 // @public
 // delete a blog
-router.delete('/blog/delete/:id', async (req, res) => {
+router.delete('/blog/:id/delete', async (req, res) => {
     try {
         const { id } = req.params;
         await Blog.findByIdAndDelete({ _id: id });
